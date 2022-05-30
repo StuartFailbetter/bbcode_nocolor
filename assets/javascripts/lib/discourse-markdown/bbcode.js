@@ -9,8 +9,7 @@ function replaceFontColor(text) {
         return `<font color='${p1}'>${p2}</font>`;
       }
     ))
-  ) */
-  {}
+  ) {} */
   return text;
 }
 
