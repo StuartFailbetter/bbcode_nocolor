@@ -1,7 +1,7 @@
 import I18n from "I18n";
 
 function replaceFontColor(text) {
-  while (
+  /* while (
     text !==
     (text = text.replace(
       /\[color=([^\]]+)\]((?:(?!\[color=[^\]]+\]|\[\/color\])[\S\s])*)\[\/color\]/gi,
@@ -9,7 +9,8 @@ function replaceFontColor(text) {
         return `<font color='${p1}'>${p2}</font>`;
       }
     ))
-  ) {}
+  ) */
+  {}
   return text;
 }
 
