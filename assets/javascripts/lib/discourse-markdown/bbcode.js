@@ -1,7 +1,7 @@
 import I18n from "I18n";
 
 function replaceFontColor(text) {
-  /* while (
+  while (
     text !==
     (text = text.replace(
       /\[color=([^\]]+)\]((?:(?!\[color=[^\]]+\]|\[\/color\])[\S\s])*)\[\/color\]/gi,
@@ -9,7 +9,7 @@ function replaceFontColor(text) {
         return `<font color='${p1}'>${p2}</font>`;
       }
     ))
-  ) {} */
+  ) {}
   return text;
 }
 
@@ -69,10 +69,10 @@ function setupMarkdownIt(md) {
     wrap: wrap("font", "face"),
   });
 
-  ruler.push("color", {
+  /* ruler.push("color", {
     tag: "color",
     wrap: wrap("font", "color"),
-  });
+  }); */
 
   ruler.push("bgcolor", {
     tag: "bgcolor",
@@ -220,7 +220,7 @@ export function setup(helper) {
     "div.sepquote",
     "span.smallfont",
     "blockquote.indent",
-    "font[color=*]",
+    //"font[color=*]",
     "font[size=*]",
     "font[face=*]",
     "ol[type=*]",
