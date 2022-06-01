@@ -74,7 +74,7 @@ function setupMarkdownIt(md) {
     wrap: wrap("font", "color"),
   }); */
 
-  ruler.push("bgcolor", {
+  /* ruler.push("bgcolor", {
     tag: "bgcolor",
 
     wrap: wrap(
@@ -82,7 +82,7 @@ function setupMarkdownIt(md) {
       "style",
       (tagInfo) => "background-color:" + tagInfo.attrs._default.trim()
     ),
-  });
+  }); */
 
   ruler.push("highlight", {
     tag: "highlight",
